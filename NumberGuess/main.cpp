@@ -4,7 +4,7 @@
 
 int GenerateRandomNumber() {
     srand(time(0));
-    int RandomNumber = rand() % 10 + 1;
+    int RandomNumber = rand() % 100 + 1;
     return RandomNumber;
 }
 
