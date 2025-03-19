@@ -10,20 +10,20 @@ int GenerateRandomNumber() {
 
 int main(){
     int RandomNumber = GenerateRandomNumber();
-    //std::cout << "Tahmin edilecek sayi: " << RandomNumber << std::endl;
+    //std::cout << "Number to Guess: " << RandomNumber << std::endl;
     while (true) {
         int value;
-        std::cout << "Bir sayi tahmin ediniz: ";
+        std::cout << "Guess a Number: ";
         std::cin >> value;
         if (value == RandomNumber) {
-            std::cout << "Tebrikler! Dogru tahmin ettiniz :) " << std::endl;
+            std::cout << "Congratulations! You guessed the correct number :) " << std::endl;
             break;
         }else if(value > RandomNumber){
-            std::cout << "Büyük bir sayı tahmin ettiniz." << std::endl;
+            std::cout << "You guessed a larger number." << std::endl;
         }else if (value < RandomNumber) {
-            std::cout << "Kucuk bir sayı tahmin ettiniz." << std::endl;
+            std::cout << "You guessed a smaller number." << std::endl;
         }else {
-            std::cout << "Kaybettiniz:(" << std::endl;
+            std::cout << "You lost :( " << std::endl;
         }
     }
 }
